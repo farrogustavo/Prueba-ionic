@@ -8,9 +8,22 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tab',
     pathMatch: 'full'
   },
+  {
+    path: 'tab',
+    loadChildren: () => import('./tab/tab.module').then( m => m.TabPageModule)
+  },
+  {
+    path: 'bus-ida',
+    loadChildren: () => import('./bus-ida/bus-ida.module').then( m => m.BusIdaPageModule)
+  },
+  {
+    path: 'bus-regreso',
+    loadChildren: () => import('./bus-regreso/bus-regreso.module').then( m => m.BusRegresoPageModule)
+  },
+ 
 ];
 
 @NgModule({

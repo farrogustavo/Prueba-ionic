@@ -24,3 +24,26 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+ion-menu::part(backdrop) {
+    background-color: rgba(238, 255, 0, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgba(217, 255, 0, 0.18);
+  }
+
+  ion-content.fondohome{
+    --background: url("https://www.xtrafondos.com/wallpapers/vertical/mosaico-digital-de-colores-7905.jpg");
+  }
+  .ColorAO{
+    color: red;
+    font-size: 35px;
+  }
+
+  .letra{
+    font-size: 10px;
+  }
